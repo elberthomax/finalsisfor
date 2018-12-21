@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="/node-waves/waves.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="/animate-css/animate.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="/morrisjs/morris.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
@@ -106,7 +106,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li class="active">
+                    <li>
                         <a href="<?php echo site_url() ?>/admin/index">
                             <i class="material-icons">home</i>
                             <span>Home</span>
@@ -118,7 +118,7 @@
                             <span>Customer</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="<?php echo site_url() ?>/admin/company">
                             <i class="material-icons">layers</i>
                             <span>Company</span>
@@ -171,7 +171,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                VERTICAL LAYOUT
+                                <?php print($type);?>
                             </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
@@ -187,21 +187,34 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <form>
-                                <label for="email_address">Email Address</label>
+                            <form action="<?php echo site_url() ?>/admin/company<?php print($type);?>" method="post">
+                                <input type="hidden" name="id" class="form-control" value="<?php print($id)?>">
+                                <label for="email_address">nama</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+                                        <input type="text" name="nama" class="form-control" placeholder="masukkan nama" value="<?php print($nama);?>">
                                     </div>
                                 </div>
-                                <label for="password">Username</label>
+                                <label for="password">nomor</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+                                        <input type="text" name="no" class="form-control" placeholder="masukkan nomor" value="<?php print($no);?>">
+                                    </div>
+                                </div>
+                                <label for="password">email</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" name="email" class="form-control" placeholder="masukkan email" value="<?php print($email);?>">
+                                    </div>
+                                </div>
+                                <label for="password">alamat</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" name="alamat" class="form-control" placeholder="masukkan alamat" value="<?php print($alamat);?>">
                                     </div>
                                 </div>
                                 <br>
-                                <button type="button" class="btn btn-primary m-t-15 waves-effect">LOGIN</button>
+                                <button type="submit" class="btn btn-primary m-t-15 waves-effect">add</button>
                             </form>
                         </div>
                     </div>

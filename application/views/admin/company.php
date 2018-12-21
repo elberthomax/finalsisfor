@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="/node-waves/waves.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="/animate-css/animate.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="/morrisjs/morris.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
@@ -112,7 +112,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li class="active">
+                    <li>
                         <a href="<?php echo site_url() ?>/admin/index">
                             <i class="material-icons">home</i>
                             <span>Home</span>
@@ -124,7 +124,7 @@
                             <span>Customer</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="<?php echo site_url() ?>/admin/company">
                             <i class="material-icons">layers</i>
                             <span>Company</span>
@@ -195,51 +195,38 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>FIRST NAME</th>
-                                        <th>LAST NAME</th>
-                                        <th>USERNAME</th>
+                                        <th>NAMA</th>
+                                        <th>NOMOR</th>
+                                        <th>EMAIL</th>
+                                        <th>ALAMAT</th>
                                         <th>ACTION</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>
-                                        	<button type="button" class="btn btn-success waves-effect">
-			                                    <i class="material-icons">home</i>
-			                                </button>
-			                                <button type="button" class="btn btn-danger waves-effect">
-			                                    <i class="material-icons">flight_takeoff</i>
-			                                </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Larry</td>
-                                        <td>Jellybean</td>
-                                        <td>@lajelly</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Larry</td>
-                                        <td>Kikat</td>
-                                        <td>@lakitkat</td>
-                                    </tr>
+                                    <?php foreach($data as $value) :?>
+                                        <tr>
+                                             <form action="<?php echo site_url() ?>/admin/companyprocess" method="post">
+                                                <th scope="row"><?php print($value["id"]); ?></th>
+                                                <input type="hidden" name="id" value="<?php print($value["id"]); ?>">
+                                                <td><?php print($value["nama"]); ?></td>
+                                                <input type="hidden" name="nama" value="<?php print($value["nama"]); ?>">
+                                                <td><?php print($value["no"]); ?></td>
+                                                <input type="hidden" name="no" value="<?php print($value["no"]); ?>">
+                                                <td><?php print($value["email"]); ?></td>
+                                                <input type="hidden" name="email" value="<?php print($value["email"]); ?>">
+                                                <td><?php print($value["alamat"]); ?></td>
+                                                <input type="hidden" name="alamat" value="<?php print($value["alamat"]); ?>">
+                                            <td>
+                                                    <button type="submit" name="jenis" value="update" class="btn btn-success waves-effect">
+                                                        <i class="material-icons">home</i>
+                                                    </button>
+                                                <button type=type="submit" name="jenis" value="delete" class="btn btn-danger waves-effect">
+                                                    <i class="material-icons">flight_takeoff</i>
+                                                </button>
+                                            </td>
+                                            </form>
+                                        </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
                         </div>
@@ -251,25 +238,26 @@
     </section>
 
     <!-- Jquery Core Js -->
-    <script src="/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="/node-waves/waves.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/node-waves/waves.js"></script>
 
     <!-- Custom Js -->
     <script src="<?php echo base_url() ?>assets/js/admin.js"></script>
 
     <!-- Demo Js -->
     <script src="<?php echo base_url() ?>assets/js/demo.js"></script>
+    </script>
 </body>
 
 </html>
