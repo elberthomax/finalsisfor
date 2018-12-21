@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="/node-waves/waves.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="/animate-css/animate.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="/morrisjs/morris.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
@@ -196,107 +196,8 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/1.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/2.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-2.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/3.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-3.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/4.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-4.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/5.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-5.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/6.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-6.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/7.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-7.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/8.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-8.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/9.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-9.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/10.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-10.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/11.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-11.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/12.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-12.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/13.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-13.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/14.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-14.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/15.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-15.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/16.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-16.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/17.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-17.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/18.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-18.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/19.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-19.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="../../images/image-gallery/20.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="../../images/image-gallery/thumb/thumb-20.jpg">
-                                    </a>
-                                </div>
+                            <div class="list-unstyled row clearfix" id="fill-picture">
+                                
                             </div>
                         </div>
                     </div>
@@ -307,25 +208,39 @@
 
 
     <!-- Jquery Core Js -->
-    <script src="/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="/node-waves/waves.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/node-waves/waves.js"></script>
 
     <!-- Custom Js -->
     <script src="<?php echo base_url() ?>assets/js/admin.js"></script>
 
     <!-- Demo Js -->
     <script src="<?php echo base_url() ?>assets/js/demo.js"></script>
+    <script type="text/javascript">
+        fetch("https://jsonplaceholder.typicode.com/photos").then(response => response.json()).then((response) => {
+            console.log(response);
+            let text = '';
+            response.forEach(({title,url,thumbnailUrl}) => {
+                text +=` <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <a href="${url}" data-sub-html="Demo Description">
+                                        <img class="img-responsive thumbnail" src="${thumbnailUrl}">
+                                    </a>
+                                </div>`;
+            });
+            document.getElementById("fill-picture").innerHTML = text;
+        });
+    </script>
 </body>
 
 </html>
